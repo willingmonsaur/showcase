@@ -1,0 +1,84 @@
+body {
+    background-color: orange; /* Initial background color */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+  }
+  
+  #container {
+    text-align: center;
+    margin-bottom: 20px; /* Space between container and video */
+  }
+  
+  #password {
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  #message {
+    color: red;
+    margin-top: 10px; /* Space between message and input */
+  }
+  
+  #video {
+    display: none;
+    width: 100%; /* Fill entire viewport width */
+    height: calc(100vh - 200px); /* Video height with space for message below */
+    object-fit: cover;
+  }
+  
+  #paragraph {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px; /* Space between video and message */
+    display: none; /* Initially hidden */
+  }
+  
+  .hidden {
+    display: none; /* Initially hidden pop-ups */
+  }
+  
+  #popup, #popup2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center pop-ups */
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 2; /* Ensure pop-ups are on top */
+  }
+  
+  #popup-message, #popup2-message {
+    text-align: center;
+  }
+  
+  #popup button, #popup2 button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #popup-yes {
+    background-color: green;
+    color: white;
+  }
+  
+  #popup-no {
+    background-color: red;
+    color: white;
+  }
+  
+  #popup2-button {
+    background-color: lightblue;
+    color: black;
+  }
+  
